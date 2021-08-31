@@ -1,0 +1,91 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        --clr-buttondodaj: rgb(255, 192, 203);
+        --clr-buttonusun: rgb(125, 237, 245);
+        --clr-container: rgb(255, 164, 164);
+        --clr-box-shadow: rgb(252, 59, 59);
+        --clr-buttondodaj-hover: rgb(250, 128, 120);
+        --clr-buttonusun-hover: rgb(2, 139, 37);
+        --crl-button-textusun: #ff0000;
+        --clr-maintext: rgb(165, 42, 42);
+    }
+    
+    body {
+        background: url(./foto/background.jpeg);
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        line-height: 2em;
+        color: var(--clr-maintext);
+    }
+    
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        width: 20rem;
+        background: var(--clr-container);
+        border-radius: 15%;
+        box-shadow: .75em .75em 1em var(--clr-box-shadow);
+    }
+    
+    h1 {
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin: 1em;
+    }
+    
+    #dodaj {
+        text-align: center;
+        height: 2rem;
+        width: 15rem;
+        margin: 1em;
+        background-color: var(--clr-buttondodaj);
+        border-radius: .625rem;
+        border: transparent;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--clr-maintext);
+        cursor: pointer;
+    }
+    
+    #dodaj:hover {
+        border: solid var(--clr-buttondodaj-hover);
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .5em;
+        font-weight: 700;
+    }
+    
+    #usun {
+        text-align: center;
+        height: 2rem;
+        width: 15rem;
+        background-color: var(--clr-buttonusun);
+        border-radius: .625rem;
+        border: transparent;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgb(0, 68, 0);
+        cursor: pointer;
+    }
+    
+    #usun:hover {
+        text-align: center;
+        border: solid var(--clr-buttonusun-hover);
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        color: var(--crl-button-textusun);
+        font-weight: 900;
+    }
